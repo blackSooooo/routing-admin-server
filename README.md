@@ -1,21 +1,17 @@
 # routing-admin-server
 **```routing information```** admin server with spring mvc, mongoDB, redis.
 
-***
-
 ## Index
 
 - [API](#API)
 - [Model](#Model)
 - [Redis](#Redis)
 
-***
-
 ## API
 
 this server provides routing information CRUD REST API.
 
-### create 
+### ```create``` 
 
 POST /routings
 
@@ -75,7 +71,7 @@ HTTP 201 Created
 | 409         | Invalid client value        | client api is already existed.          |
 | 500         | System Error                | error is occurred in server.            |
 
-### read
+### ```read```
 
 GET /routings
 
@@ -114,7 +110,7 @@ HTTP 200 OK
 |-------------|-----------------------------|-----------------------------------------|
 | 500         | System Error                | error is occurred in server.            |
 
-### update
+### ```update```
 
 PUT /routings/{routingId}
 
@@ -160,7 +156,7 @@ HTTP 200 OK
 | 404         | Unfound resources           | parameter(id) is invalid.               |
 | 500         | System Error                | error is occurred in server.            |
 
-## delete
+## ```delete```
 
 DELETE /routings/{routingId}
 
